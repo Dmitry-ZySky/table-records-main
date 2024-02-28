@@ -1,0 +1,6 @@
+RequiredCol,StringCol,Date,Select
+Clark,Kent,2/29/1984,First
+Diana,Prince,3/22/1976,Second
+Tony,Stark,5/29/1970,Third
+Carol,,4/24/1968,0
+Ryan,Celeslie,3/22/1982,Unknown

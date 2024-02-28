@@ -1,0 +1,22 @@
+
+    <div mat-dialog-content [formGroup]="tableImportDetailsEditForm">
+        <mat-form-field>
+            <mat-label>Enter required string column</mat-label>
+            <input matInput [(ngModel)]="tableImport.requiredStringCol" formControlName="requiredStringCol" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Enter string column</mat-label>
+            <input matInput [(ngModel)]="tableImport.stringCol" formControlName="stringCol">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Choose a date column</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="tableImport.dateCol" formControlName="dateCol" required/>
+            <mat-hint>mm/dd/yyyy</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Enter select</mat-label>
+            <input matInput [(ngModel)]="tableImport.selectCol" formControlName="selectCol" maxlength="2" required>
+        </mat-form-field>
+    </div>
